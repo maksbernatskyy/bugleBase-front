@@ -14,7 +14,7 @@ export default function Header() {
 
         <div className="search-bar">
             <input type="text" placeholder="Cerca..."/>
-            <button><i class="bi bi-search"></i></button>
+            <button><i className="bi bi-search"></i></button>
         </div>
 
         <nav className="nav-menu">
