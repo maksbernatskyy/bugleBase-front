@@ -11,6 +11,15 @@ export default function Header() {
             <img id="logo" src={logo} alt="Logo" />
           </Link>
         </div>
+
+        <div className="search-bar">
+            <input type="text" placeholder="Cerca..."/>
+        </div>
+
+        <nav className="nav-menu">
+            <Link to={'/games'} className="nav-link">Catalogo</Link>
+            <Link to={'/chisiamo'} className="nav-link">Chi Siamo</Link>
+        </nav>
       </header>
     </>
   );
