@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;500;700&display=swap');
+@import url(bootstrap-icons);
+
 :root {
+    /* Font */
+    --font-titles: 'Orbitron', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
     /* Background Colors */
     --bg-main: #0f111a;
     --bg-surface: #1a1d29;
@@ -22,8 +29,10 @@
 }
 
 body {
+    font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
+    line-height: 1.6;
 }
 
 header {
@@ -60,6 +69,12 @@ header {
     padding: 8px;
     width: 100%;
     outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
 }
 
 .nav-menu {
