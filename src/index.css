@@ -1,7 +1,29 @@
+:root {
+    /* Background Colors */
+    --bg-main: #0f111a;
+    --bg-surface: #1a1d29;
+    --bg-soft: #252936;
+
+    /* Brand Colors */
+    --color-primary: #7c3aed;
+    --color-primary-soft: #9061f9;
+    --color-secondary: #00d1b2;
+
+    /* Text Colors */
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --text-on-primary: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
 }
 
 header {
@@ -9,4 +31,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--bg-soft);
+}
+
+#logo {
+    height: 100px;
 }
