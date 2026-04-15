@@ -3,7 +3,7 @@ export default function Card({ game }) {
     <>
       <div className="card">
         <div className="card-top">
-          <img src={game.url} alt='' />
+          <img src={game.url} alt="" />
         </div>
         <div className="card-bottom">
           <h3 className="card-title">{game.name}</h3>

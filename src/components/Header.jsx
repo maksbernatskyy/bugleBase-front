@@ -18,8 +18,8 @@ export default function Header() {
         </div>
 
         <nav className="nav-menu">
-            <Link to={'/games'} className="nav-link">Catalogo</Link>
-            <Link to={'/chisiamo'} className="nav-link">Chi Siamo</Link>
+            <Link to='/games' className="nav-link">Catalogo</Link>
+            <Link to='/chisiamo' className="nav-link">Chi Siamo</Link>
         </nav>
       </header>
     </>
