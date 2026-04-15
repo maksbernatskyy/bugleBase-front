@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 import Card from "../components/Card";
@@ -19,7 +20,9 @@ export default function Games() {
     <>
       <div className="grid">
         {games.map((game) => (
-          <Card key={game.id} game={game} />
+          <Link to={`/games/${game.id}`} key={game.id}>
+            <Card game={game} />
+          </Link>
         ))}
       </div>
     </>
