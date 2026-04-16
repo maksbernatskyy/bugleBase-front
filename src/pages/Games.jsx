@@ -30,7 +30,8 @@ export default function Games() {
     <>
       {isLoading ? (
         <div className="loader-container">
-          <Miyagi size="35" stroke="3.5" speed="0.9" color="white" />
+          <Miyagi size="45" stroke="3.5" speed="0.9" color="var(--color-primary)" />
+          <span className="loader-text">Caricamento in corso...</span>
         </div>
       ) : (
         <div className="grid">
