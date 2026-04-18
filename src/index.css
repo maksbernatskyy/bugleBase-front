@@ -70,31 +70,6 @@ header {
   }
 }
 
-.search-bar {
-  display: flex;
-  flex: 0 1 400px;
-  margin: 0 2rem;
-  background-color: var(--bg-main);
-  border-radius: 20px;
-  padding: 5px 15px;
-  border: 1px solid var(--bg-soft);
-}
-
-.search-bar input {
-  background: transparent;
-  border: none;
-  color: var(--text-main);
-  padding: 8px;
-  width: 100%;
-  outline: none;
-}
-
-.search-bar button {
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-}
-
 .nav-menu {
   display: flex;
   gap: 2rem;
