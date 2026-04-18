@@ -1,6 +1,26 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function HomePage() {
+    const [games, setGames] = useState([])
+    const [studios, setStudios] = useState([])
+
+    function fetchGames() {
+        axios.get("http://localhost:8080/api/games")
+        .then((res) => setGames(res.data))
+        .catch((err) => console.error(err))
+    }
+
+    function fetchStudios() {
+        axios.get("http://localhost:8080/api/studios")
+        .then((res) => setStudios(res.data))
+        .catch((err) => console.error(err))
+    }
+
+    useEffect(fetchGames, [])
+    useEffect(fetchStudios, [])
+
   return (
     <>
       <div className="home-container">
@@ -25,18 +45,17 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual">
-            {/* Qui potresti mettere un'immagine astratta o un'animazione CSS */}
             <div className="glow-sphere"></div>
           </div>
         </section>
 
         <section className="stats-section">
           <div className="stat-item">
-            <span className="stat-number">20+</span>
+            <span className="stat-number">{games.length}</span>
             <span className="stat-label">Titoli AAA</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">5</span>
+            <span className="stat-number">{studios.length}</span>
             <span className="stat-label">Top Studios</span>
           </div>
           <div className="stat-item">
